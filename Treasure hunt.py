@@ -5,6 +5,7 @@ score = 0
 print("Welcome to Treasure Hunt!")
 
 # Function to get valid input
+
 def get_choice(prompt, valid_choices):
     while True:
         choice = input(prompt).strip().capitalize()
@@ -15,6 +16,8 @@ def get_choice(prompt, valid_choices):
 
 # First Choice
 # If the player chooses Left, the game ends.If they choose Right, they get 10 points and continue.
+
+
 first_choice = get_choice("Choose your path (Left or Right): ", ["Left", "Right"])
 
 if first_choice == "Left":
@@ -26,6 +29,7 @@ else:
     print(f"Your score: {score}")
 
 # Second Choice
+
 second_choice = get_choice("Do you follow the River or take the Bridge? (River/Bridge): ", ["River", "Bridge"])
 
 if second_choice == "River":
@@ -37,6 +41,7 @@ else:
     print(f"Your score: {score}")
 
 # Third Choice
+
 third_choice = get_choice("Do you enter the Cave or explore the Forest? (Cave/Forest): ", ["Cave", "Forest"])
 
 if third_choice == "Forest":
@@ -49,6 +54,8 @@ else:
 
 # Fourth Choice (Random Event)
 # This randomly determines if the player encounters danger or gets lucky.
+
+
 print("You notice two paths ahead, but you hear strange noises...")
 random_event = random.choice(["safe", "trap"])
 
@@ -68,6 +75,7 @@ else:
     print(f"Your score: {score}")
 
 # Fifth Choice
+
 fifth_choice = get_choice("Do you open the Golden Door or the Wooden Door? (Golden/Wooden): ", ["Golden", "Wooden"])
 
 if fifth_choice == "Golden":
@@ -81,6 +89,7 @@ else:
 
 # Final Ending Based on Score
 # **Multiple Endings Based on Score**
+
 if score >= 50:
     print("💰 TREASURE HUNTER ENDING: You became the richest adventurer of all time!")
 elif score >= 40:
