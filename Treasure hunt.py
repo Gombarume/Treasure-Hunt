@@ -80,24 +80,24 @@ fifth_choice = get_choice("Do you open the Golden Door or the Wooden Door? (Gold
 
 if fifth_choice == "Golden":
     print("The golden door was a trap! You took the treasure but were cursed forever! 👻")
-    print("💀 Cursed Ending! Your greed led to your downfall.")
+    print(" Cursed Ending! Your greed led to your downfall.")
     exit()
 else:
     score += 20
-    print("You enter the wooden door and find a treasure chest! 🎉 (+20 points)")
+    print("You enter the wooden door and find a treasure chest!  (+20 points)")
     print(f"Final Score: {score}")
 
 # Final Ending Based on Score
 # **Multiple Endings Based on Score**
 
 if score >= 50:
-    print("💰 TREASURE HUNTER ENDING: You became the richest adventurer of all time!")
+    print("TREASURE HUNTER ENDING: You became the richest adventurer of all time!")
 elif score >= 40:
-    print("🛡 HERO ENDING: You defeated an ancient guardian and earned eternal glory!")
+    print(" HERO ENDING: You defeated an ancient guardian and earned eternal glory!")
 elif score >= 30:
-    print("🤷‍♂️ SURVIVOR ENDING: You barely escaped, but at least you're alive.")
+    print(" SURVIVOR ENDING: You barely escaped, but at least you're alive.")
 else:
-    print("❌ BAD ENDING: You found nothing and were lost forever...")
+    print(" BAD ENDING: You found nothing and were lost forever...")
 
 
 # The final score determines the ending message.
